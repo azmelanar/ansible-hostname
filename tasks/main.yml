@@ -1,0 +1,25 @@
+---
+# tasks file for hostname
+
+- name: set hostname
+  hostname:
+    name: "{{ hostname }}"
+  tags: [hostname]
+
+- name: update hostname file
+  template:
+    src: hostname.j2
+    dest: /etc/hostname
+    owner: root
+    group: root
+    mode: 0644
+  tags: [hostname]
+
+- name: update hosts file
+  template:
+    src: hosts.j2
+    dest: /etc/hosts
+    owner: root
+    group: root
+    mode: 0644
+  tags: [hostname]
