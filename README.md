@@ -1,5 +1,5 @@
-Audit
-=====
+Hostname
+========
 
 [![Build Status](https://api.travis-ci.org/azmelanar/ansible-hostname.png)](https://travis-ci.org/azmelanar/ansible-hostname) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-hostname-blue.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2592)
 
