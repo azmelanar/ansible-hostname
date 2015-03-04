@@ -1,6 +1,5 @@
 ---
 # defaults file for hostname
-hostname: localhost
-domain: localdomain
+hostname: localhost.localdomain
 
 hosts: {}
