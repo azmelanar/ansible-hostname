@@ -29,7 +29,7 @@ Example of usage:
 
     - hosts: servers
       roles:
-         - { role: azmelanar.hostname, hostname: server.example.com }
+         - { role: azmelanar.hostname, hostname: server.example.com, hosts: { server1: 192.168.0.1, server2: 192.168.0.2 } }
 
 License
 -------
