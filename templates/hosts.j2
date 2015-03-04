@@ -1,5 +1,6 @@
 127.0.0.1	localhost.localdomain localhost
-127.0.1.1	{% if domain is defined %}{{ hostname + '.' + domain }}{% endif %} {{ hostname }}
+127.0.1.1	{{ hostname }}{% if '.' in hostname %} {{ hostname.split('.')[0] }}{% endif %}
+
 
 {% if hosts is defined %}
 {% for name, ip in hosts.iteritems() %}
